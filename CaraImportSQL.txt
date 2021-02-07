@@ -1,0 +1,4 @@
+-buat database baru bernama tugasbesar
+-Import sql file ke phpmyadmin
+
+

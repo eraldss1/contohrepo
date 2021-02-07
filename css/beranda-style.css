@@ -1,0 +1,753 @@
+/* BOTH VERSION == HANDPHONE */
+
+/* Navbar */
+
+@font-face{
+    font-family: "Viga-Regular";
+    src:url(text/Viga-Regular.ttf) format('truetype');
+}
+@font-face{
+    font-family: "Sriracha-Regular";
+    src:url(text/Sriracha-Regular.ttf) format('truetype');
+}
+@font-face{
+    font-family: "Philosopher-Regular";
+    src:url(text/Philosopher-Regular.ttf) format('truetype');
+}
+@font-face{
+    font-family: "Cinzel-Regular";
+    src:url(text/Cinzel-Regular.ttf) format('truetype');
+}
+
+.navbar-brand{
+    font-family:"Viga-Regular",arial;
+}
+.paralax h1,.itm-2 h1,.latar h1,.client .txt{
+    font-family:"Philosopher-Regular",arial;
+}
+.navbar{
+    position: relative;
+    z-index: 9;
+}
+
+
+/* .navbar:hover{
+    background:linear-gradient(to bottom right,rgb(0, 128, 255),rgb(4, 209, 255));
+    transition: 3s;
+} */
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(img/rajaampat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,.8);
+    position: relative;
+}
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0.10));
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .display-4 {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,.9);
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: -10px;
+    font-family:"Sriracha-Regular",arial;
+}
+
+.coba{
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.5s all ease-in-out;
+}
+.coba1{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* Info Panel */
+.info-panel{
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    margin-top: -200px;
+    background-color: white;
+    padding: 30px;
+}
+.info-panel img{
+    width: 80px;
+    height: 80px;
+    margin: 0 20px 20px 0;
+}
+
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p{
+    font-size: 14px;
+    margin-top: -5px;
+    font-weight: 200px;
+    color: rgb(103, 100, 100);
+}
+.inside-info-panel{
+    padding: 10px;
+}
+
+.Foc{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+
+.Foc1{
+    opacity: 1;
+    transform:translateY(0px);
+}
+.Info{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+
+.Info1{
+    opacity: 1;
+    transform:translateY(0px);
+}
+.Des{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+
+.Des1{
+    opacity: 1;
+    transform:translateY(0px);
+}
+.Amazing{
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.5s all ease-in-out;
+}
+
+.Amazing1{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.GI{
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.5s all ease-in-out;
+}
+
+.GI1{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.Oc{
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.5s all ease-in-out;
+}
+
+.Oc1{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.Pth{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+
+.Pth1{
+    opacity: 1;
+    transform:translateY(0px);
+}
+/* End for Info Panel */
+
+/* item-1 */
+.bgn0{
+    padding-top: 30px;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,.9);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.5s all ease-in-out;
+}
+.bgn01{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.bgn1{
+    margin-top: 50px;
+}
+.bgn1-1{
+    padding-top: 20px;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,.9);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+.bgn1-2{
+    opacity: 1;
+    transform:translateY(0px);
+}
+.bgn1 h1,.bgn1 p{
+    color: #fff;
+}
+/* end for item-1 */
+
+
+/* Utility */
+.tombol:hover{
+animation: animate 8s linear infinite;
+}
+
+
+.tombol{
+    border-radius: 40px;
+    border: 0px;
+    text-transform: uppercase;
+    background-size: 100%;
+    background-image: linear-gradient(90deg,rgb(0, 128, 255),rgb(114, 74, 213),rgb(166, 82, 211),rgb(206, 80, 164));
+}
+/* end for utility */
+/* bagian item-2  */
+.itm-2{
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.coba-1,.coba-2,.coba-3,.coba-4,.coba-5,.coba-6{
+    width: 250px;
+    height: 250px;
+    margin: 50px 10px 0 0;
+    box-shadow: 0px 10px 14px -5px rgb(0, 0, 0);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+div.coba-1{
+    background-image: url(img/liveaboard-indonesia-komodo-padar-xxl.jpg);
+}
+div .coba-2{
+    background-image: url(img/rajaampat.jpg);
+}
+
+div.coba-3{
+    background-image: url(img/puraUluwatu.jpg);
+}
+
+div.coba-4{
+    background-image: url(img/bunaken.jpg);
+}
+
+div.coba-5{
+    background-image: url(img/danautoba.jpg);
+}
+
+div.coba-6{
+    background-image: url(img/pulocinta.jpg);
+}
+/* 
+.coba-1:hover ,.coba-2:hover ,.coba-3:hover ,.coba-4:hover ,.coba-5:hover ,.coba-6:hover{
+    margin-top: 20px;
+    box-shadow: 0px 35px 14px -10px rgba(0,0,0,.15); */
+    /* background:linear-gradient( to left bottom,red,yellow); */
+    /* margin-bottom: 30px; */
+    /* transform: translate(50px,100px); */
+    /* transition: 1s;
+    opacity: 0.4;
+} */
+
+.explanation{
+    justify-items: space-evenly;
+    align-items: center;
+    position: absolute;
+    transition: all .5s ease;
+    background: rgba(4, 24, 86, 0.6);
+    opacity: 0;
+    width: 100%;
+}
+.coba-1:hover .explanation{
+    opacity: 1;
+}
+.coba-2:hover .explanation{
+    opacity: 1;
+}
+.coba-3:hover .explanation{
+    opacity: 1;
+}
+.coba-4:hover .explanation{
+    opacity: 1;
+}
+.coba-5:hover .explanation{
+    opacity: 1;
+}
+.explan{
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.coba-1:hover .explan{
+    width: 100%;
+}
+.coba-2:hover .explan{
+    width: 100%;
+}
+.coba-3:hover .explan{
+    width: 100%;
+}
+.coba-4:hover .explan{
+    width: 100%;
+}
+.coba-5:hover .explan{
+    width: 100%;
+}
+.ex{
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    font-size: 15px;
+}
+.responsive{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    transition: 3s;
+}
+
+/* item 3 */
+/* .Visa_and_Immigration_Information,.Embassies,.Time_Differences,.History,.Language,.Currency{
+    height: 30px;
+    background-color: rgb(90, 111, 253);
+}
+
+.Embassies,.Currency,.History{
+    background-color: rgb(145, 218, 255);
+} */
+
+.latar{
+    background-color: #fff;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.latar h1{
+    color: rgb(0, 0, 0);
+}
+.item-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    min-height: 100%;
+}
+
+.container-3{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.container-3 .kartu{
+    position: relative;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+}
+
+.container-3 .kartu .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.container-3 .kartu:hover .imgBx{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: #162c3b;
+}
+
+.container-3 .kartu .imgBx::before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+    color:rgba(255, 255, 255, 0.05);
+    font-weight: 700;
+}
+
+.container-3 .kartu .imgBx img{
+    max-width: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+.container-3 .kartu:hover .imgBx img{
+    max-width: 75px;
+}
+
+.container-3 .kartu .isi{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-3 .kartu .isi h3{
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.container-3 .kartu .isi a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* end for item-3 */
+.penutup{
+    background: #162c3b;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.penutup ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.penutup ul li{
+    list-style: none;
+}
+.penutup ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.penutup ul li a img{
+filter: invert(1);
+max-width: 20px;
+}
+.txt{
+    color: #fff;
+}
+
+.client{
+    background: #162c3b;
+    padding: 100px;
+    text-align: center;
+}
+.client .imgBx-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.client .imgBx-2 img{
+    max-width: 200px;
+    margin: 20px;
+    opacity: .25;
+    cursor: pointer;
+}
+.client .imgBx-2 img:hover{
+    opacity: 1;
+}
+
+@media(min-width:938px){
+    .client .imgBx-2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+}
+
+
+/* DESKTOP VERSION= LAPTOP */
+
+@media (min-width:992px){ 
+    .navbar{
+        position: relative;
+    }
+
+
+    .navbar-brand,.nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0,.8);
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    /* .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom-width: 3px;
+        border-bottom-color: rgb(255, 255, 255);
+        border-bottom-style: solid;
+        width: 50%;
+        margin: auto;
+        border-radius: 1px;
+        padding-bottom: 3px;
+        margin-bottom: -8px;
+    } */
+
+    .jumbotron{
+        margin-top: -150px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 60px;
+        margin-top: 80px;
+ 
+    }
+
+
+    /* Info Panel */
+    .info-panel{
+        box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+        border-radius: 12px;
+        margin-top: -110px;
+        background-color: white;
+        padding: 30px;
+    }
+    .info-panel img{
+        width: 80px;
+        height: 80px;
+        margin: 0 20px 20px 0;
+    }
+
+    .info-panel h4{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .info-panel p{
+        font-size: 14px;
+        margin-top: -5px;
+        font-weight: 200px;
+        color: rgb(103, 100, 100);
+    }
+    /* item-1 */
+.bgn1{
+    margin-top: 50px;
+}
+
+.bgn1-1{
+    padding-top: 20px;
+}
+/* end for item-1 */
+
+/* item-2 */
+.itm-2{
+    margin-top: 50px;
+}
+/* end for item-2 */
+.paralax{
+      /* The image used */
+  background-image: url('img/liveaboard-indonesia-komodo-padar-xxl.jpg');
+
+  /* Full height */
+  height: 350px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+}
+/* End for Info Panel */
+    /* Bagian item-2 */
+    @media(max-width:992){
+    /* item 3 */
+    .container-3{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-3 .kartu{
+        width: 400px;
+    }
+
+    .latar{
+        background-color: rgb(255, 255, 255);
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-color: #222;
+    }
+    .latar h1{
+        color: rgb(0, 0, 0);
+    }
+    .bgn1-1{
+        padding-top: 20px;
+    }
+    .paralax{
+        /* The image used */
+    background-image: url('img/liveaboard-indonesia-komodo-padar-xxl.jpg');
+  
+    /* Full height */
+    height: 500px;
+  
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    }
+    @media(max-width:768px){
+        .container-3{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container-3 .kartu{
+            width: 300px;
+            flex-direction: column;
+            height: auto;
+        }
+
+        .container-3 .kartu .imgBx{
+            position: relative;
+        }
+
+        .container-3 .kartu .imgBx,
+        .container-3 .kartu:hover .imgBx{
+            width: 100%;
+            height: 200px;
+            left: 0;
+        }
+
+        .container-3 .kartu .imgBx img, .container-3 .kartu:hover .imgBx img{
+            max-width: 100px;
+        }
+
+        .container-3 .kartu .isi{
+            position: relative;
+            width: 100%;
+        }
+        .latar{
+            background-color: rgb(255, 255, 255);
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-color: #222;
+        }
+        .latar h1{
+            color: rgb(0, 0, 0);
+        }
+        .bgn1-1{
+            padding-top: 20px;
+        }
+        .paralax{
+            /* The image used */
+        background-image: url('img/liveaboard-indonesia-komodo-padar-xxl.jpg');
+      
+        /* Full height */
+        height: 600px;
+      
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+
+    }
+    @media(min-width:768px){
+        .paralax{
+            /* The image used */
+        background-image: url('img/liveaboard-indonesia-komodo-padar-xxl.jpg');
+      
+        /* Full height */
+        height: 420px;
+      
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+/* end for item-3 */
+/* MOBILE VERSION */
